@@ -8,10 +8,11 @@ function addItem(item) {
   return true;
 }
 console.log("in addItem", addItem("item"));
-
 function listItems() {
   console.log("in listItems", basket);
-  for (let i = 0; i < basket.length; i++) return listItems;
+  for (let i=0; i<basket.length; i++) {
+    console.log(basket[i]);
+  }
 }
 console.log("in listItems", listItems());
 function empty() {
